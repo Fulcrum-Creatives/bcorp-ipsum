@@ -1,0 +1,64 @@
+/*---------------------------------------------------------
+ * Footer
+---------------------------------------------------------*/
+.footer__left {
+  width: 100%;
+  display: block;
+  margin-bottom: 3em;
+  padding: 5em 1em;
+  @include media_query(480px) {
+    padding: 5em 5em;
+  }
+  @include media_query(1025px) {
+    display: none;
+  }
+}
+.info__text {
+  text-align: center;
+  margin-bottom: 5em;
+  a {
+    color: $color__font;
+    text-decoration: none;
+  }
+}
+.links {
+  max-width: 366px;
+  margin: 0 auto 3em;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .fulcrum {
+    a {
+      display: block;
+    }
+    img {
+      width: 101px;
+      height: 101px;
+    }
+  }
+  .heart {
+    padding: 0 18%;
+    img {
+      position: relative;
+      width: 45px;
+      height: 43px;
+      right: 5px;
+    }
+  }
+  .bcorp {
+    a {
+      display: block;
+    }
+    img {
+      width: 73px;
+      height: 111px;
+    }
+  }
+}

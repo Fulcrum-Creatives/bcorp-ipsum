@@ -1,0 +1,109 @@
+/*---------------------------------------------------------
+ * Entries
+---------------------------------------------------------*/
+.body {
+  background-color: rgba( 51, 49,50, 1 );
+  color: #fff;
+  padding: 12.5em 1em 5em;
+}
+.body__content{
+  max-width: 375px;
+  margin: 0 auto;
+}
+.target {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 3.5em 1em 3em;
+  .anyipsum-output {
+    padding: 0;
+  }
+}
+.anyipsum-form,
+.anyipsum-output {
+  strong {
+    font-weight: normal;
+  }
+  input[type="text"] {
+    padding: 0.5em;
+    width: 50px;
+    color: $color__font;
+  }
+  input[type="submit"] {
+    color: $color__font;
+    background-color: rgb( 255, 198, 39);
+    border: none;
+    outline: 0;
+    padding: 1em;
+    transition: background-color 0.4s ease;
+    text-transform: uppercase;
+    &:hover {
+      background-color: darken( rgb( 255, 198, 39), 10% );
+    }
+  }
+}
+.anyipsum-submit {
+  text-align: center;
+  .anyipsum-right-cell {
+    padding-top: 2em;
+  }
+}
+.anyipsum-paragraphs,
+.anyipsum-type,
+.anyipsum-start-with,
+.anyipsum-submit {
+  td {
+    padding: 0.5em 1em;
+  }
+}
+.anyipsum-type,
+.anyipsum-start-with {
+  .anyipsum-right-cell {
+    label {
+      padding-left: 25px;
+      position: relative;
+      margin-right: 1em;
+      input[type="radio"] {
+        position: absolute;
+        left: 0px;
+      }
+    }
+    input[type="checkbox"] {
+      margin-right: -18px;
+    }
+  }
+}
+.anyipsum-left-cell {
+  display: none;
+}
+.anyipsum-paragraphs {
+  text-align: center;
+  .anyipsum-right-cell {
+    position: relative;
+    input {
+      position: relative;
+    }
+    &:after {
+      content: 'Paragraphs';
+      position: absolute;
+      left: 96px;
+      top: -17px;
+      @include media_query(480px) {
+        left: 135px;
+      }
+    }
+    &:before {
+      content: '';
+      background-image: url(images/paragraphs-icon-@2.png);
+      background-size: 91px 91px;
+      width: 91px;
+      height: 91px;
+      display: block;
+      position: absolute;
+      left: 92px;
+      top: -114px;
+      @include media_query(480px) {
+        left: 139px;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+/*---------------------------------------------------------
+ * Header
+---------------------------------------------------------*/
+.header {
+  background-color: rgba(35, 31, 32, 1);
+}
+.header,
+.header__right,
+.header__left {
+  height: 448px;
+  overflow: hidden;
+}
+.header__right,
+.header__left {
+  float: left;
+}
+.header__right {
+  padding: 5em 1em;
+  background-color: rgba(35, 31, 32, 1);
+  color: #fff;
+}
+.header__left {
+  p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.header__left,
+.footer__left {
+  background-color: rgba(65, 64, 66, 1);
+  padding: 5em 5em;
+  color: rgb(128, 130, 133);
+  display: none;
+  p {
+    margin-bottom: 0;
+  }
+  @include media_query(1025px) {
+    display: block;
+  }
+}
+.header__text {
+  max-width: 428px;
+  margin: 3em auto 0;
+  p {
+    margin: 0;
+  }
+}

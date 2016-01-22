@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/commonhouse
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.2
+Version: 1.0.3
 Tags: 
 Text Domain: dfw
 License: GNU General Public License v2 or later
@@ -502,7 +502,7 @@ h6 {
 }
 @media screen and (min-width: 480px) {
   .anyipsum-paragraphs .anyipsum-right-cell:after {
-    left: 135px;
+    left: 139px;
   }
 }
 .anyipsum-paragraphs .anyipsum-right-cell:before {
@@ -518,7 +518,7 @@ h6 {
 }
 @media screen and (min-width: 480px) {
   .anyipsum-paragraphs .anyipsum-right-cell:before {
-    left: 139px;
+    left: 135px;
   }
 }
 

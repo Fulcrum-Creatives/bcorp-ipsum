@@ -20,10 +20,14 @@
   color: #fff;
 }
 .header__left {
+  display: none;
   p {
     position: relative;
     top: 54%;
     transform: translateY(-50%);
+  }
+  @include media_query(768px) {
+   display: block;
   }
 }
 .header__left,

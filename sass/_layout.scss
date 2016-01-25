@@ -30,7 +30,7 @@
 }
 .col__2-3 {
   width: 100%;
-  @include media_query(768px) {
+  @include media_query(1025px) {
     width: 66.66%;
   }
 }

@@ -4,7 +4,7 @@ Theme URI: https://github.com/Fulcrum-Creatives/commonhouse
 Author: Fulcrum Creatives
 Author URI: http://fulcrumcreatives.com/
 Description: Custom WordPress Framework
-Version: 1.0.5
+Version: 1.0.6
 Tags: 
 Text Domain: dfw
 License: GNU General Public License v2 or later
@@ -301,7 +301,7 @@ body {
 .col__2-3 {
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .col__2-3 {
     width: 66.66%;
   }
@@ -412,17 +412,16 @@ h6 {
 }
 
 .body__content {
-  max-width: 375px;
+  max-width: 350px;
   margin: 0 auto;
 }
 
 .target {
   max-width: 650px;
   margin: 0 auto;
-  padding: 3.5em 1em 3em;
 }
 .target .anyipsum-output {
-  padding: 0;
+  padding: 3.5em 1em 3em;
 }
 
 .anyipsum-form strong,
@@ -451,9 +450,6 @@ h6 {
   background-color: #f3b300;
 }
 
-.anyipsum-submit {
-  text-align: center;
-}
 .anyipsum-submit .anyipsum-right-cell {
   padding-top: 2em;
 }
@@ -485,9 +481,6 @@ h6 {
   display: none;
 }
 
-.anyipsum-paragraphs {
-  text-align: center;
-}
 .anyipsum-paragraphs .anyipsum-right-cell {
   position: relative;
 }
@@ -497,13 +490,8 @@ h6 {
 .anyipsum-paragraphs .anyipsum-right-cell:after {
   content: 'Paragraphs';
   position: absolute;
-  left: 96px;
+  left: 0px;
   top: -17px;
-}
-@media screen and (min-width: 480px) {
-  .anyipsum-paragraphs .anyipsum-right-cell:after {
-    left: 139px;
-  }
 }
 .anyipsum-paragraphs .anyipsum-right-cell:before {
   content: '';
@@ -513,13 +501,8 @@ h6 {
   height: 91px;
   display: block;
   position: absolute;
-  left: 92px;
+  left: -5px;
   top: -114px;
-}
-@media screen and (min-width: 480px) {
-  .anyipsum-paragraphs .anyipsum-right-cell:before {
-    left: 135px;
-  }
 }
 
 /*---------------------------------------------------------
@@ -547,11 +530,19 @@ h6 {
   color: #fff;
 }
 
+.header__left {
+  display: none;
+}
 .header__left p {
   position: relative;
   top: 54%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .header__left {
+    display: block;
+  }
 }
 
 .header__left,

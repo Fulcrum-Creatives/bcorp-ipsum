@@ -15,6 +15,9 @@
   margin: 0 auto;
   .anyipsum-output {
     padding: 3.5em 1em 3em;
+    @include media_query(1025px) {
+      padding: 3.5em 1em 0;
+    }
   }
 }
 .anyipsum-form,
